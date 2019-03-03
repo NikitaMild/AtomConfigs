@@ -1,0 +1,33 @@
+"*":
+  "atom-beautify":
+    cpp: {}
+  core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "monokai"
+    ]
+    warnOnLargeFileLimit: 110
+  editor:
+    fontSize: 13
+  "exception-reporting":
+    userId: "bd0e47e3-83fe-41b7-816c-9ee5611435a7"
+  linter: {}
+  "linter-pycodestyle":
+    executablePath: "/usr/local/bin/pylama"
+  "linter-python":
+    executablePath: "/usr/local/bin/pylama"
+    force: true
+    ignoreCodes: "E111,D212,C032"
+    linkColor: "#1600dc"
+    withMcCabe: true
+    withPep257: true
+    withPep8: true
+    withPyflakes: true
+    withPylint: true
+  "linter-ui-default":
+    panelHeight: 341
+    showPanel: true

@@ -1,0 +1,95 @@
+'name': 'ANTLR 4'
+'scopeName': 'source.antlr'
+'fileTypes': [
+  'g4'
+]
+'patterns': [
+    {
+        'name':'comment.line.double-slash.antlr4'
+        'match':'//.*[$\\n]?'
+    }
+    {
+        'name': 'comment.block.antlr4'
+        'begin': '/\\*'
+        'end': '\\*/'
+    }
+    {
+        'name':'keyword.control.antlr4'
+        'match':'\\bgrammar\\b'
+    }
+    {
+        'name':'keyword.control.antlr4'
+        'match':'\\blexer\\b'
+    }
+    {
+        'name':'keyword.control.antlr4'
+        'match':'\\bparser\\b'
+    }
+    {
+        'name':'keyword.control.antlr4'
+        'match':'\\boptions\\b'
+    }
+    {
+        'name':'keyword.control.antlr4'
+        'match':'\\bimport\\b'
+    }
+    {
+        'name':'keyword.control.antlr4'
+        'match':'\\btokens\\b'
+    },
+    {
+        'name':'keyword.control.antlr4'
+        'match':'\\bchannels\\b'
+    }
+    {
+        'name':'keyword.control.antlr4'
+        'match':'@([A-Z]|[a-z])*(?=[\\s]*{)'
+    }
+    {
+        'name': 'string.quoted.single.antl'
+        'begin': '\''
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.string.begin.antlr'
+        'end': '\''
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.string.end.antlr'
+        'patterns': [
+          {
+            'match': '\\\\.'
+            'name': 'constant.character.escape.antlr'
+          }
+        ]
+    }
+    {
+        'contentName':'constant.other.antlr4'
+        'begin':'\\['
+        'end':'\\]'
+    }
+    {
+        'contentName':'keyword.control.antlr4'
+        'begin':'->'
+        'end':'\\(|;'
+    }
+    {
+        'name':'keyword.operator.antlr4'
+        'match':'\\.\\.|-|\\.|\\?|\\~|\\*|\\+|\\+='
+    }
+    {
+        'name':'storage.modifier.antlr4'
+        'match':'#.+'
+    }
+    {
+        'name':'keyword.control.antlr4'
+        'match':'\\b(returns|locals|throws|catch|finally)\\b'
+    }
+    {
+        'name':'entity.name.function.antlr4'
+        'match':'[a-z]\\w*'
+    }
+    {
+        'name':'variable.language.antlr4'
+        'match':'[A-Z]\\w*'
+    }
+]
