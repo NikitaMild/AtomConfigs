@@ -1,4 +1,4 @@
-path tp the directory: ~/.atom/
+path to the directory: ~/.atom/
 
 replace all files
 
